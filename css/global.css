@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'My Lucida';
     src: url('../font/LucidaGrande.ttf');
-    font-style: normal; 
+    font-style: normal;
     font-weight: bold;
 }
 
@@ -187,6 +187,8 @@ input.submit {
 }
 
 #albums article {
+    flex : 30% ; 
+    max-width : 200px ;
     font-size: 0.85em;
     color: #89949b;
     margin: 10px 0;
@@ -196,6 +198,12 @@ input.submit {
     display : flex ; 
     justify-content : space-between ;
     margin-left: 15px ; 
+}
+
+.wrapper{
+    display : flex ; 
+    justify-content: space-between;
+    margin-left: 5px ;
 }
 
 #albums article img {
@@ -241,6 +249,18 @@ header, nav, aside{
 nav.browse a, nav.music a {
     padding-left: 20px;
     padding-top: 2px;
+}
+
+@media screen and (max-width :600px) {
+    #facebook{
+        display: none ; 
+    }    
+    .links{
+        display : none ; 
+    }
+    .wrapper form{
+        display : none ; 
+    }
 }
 
 nav a.heavy { background: url("../img/icon/heavy.png") no-repeat 0px; }
