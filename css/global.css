@@ -17,8 +17,14 @@ a {
     text-decoration: none;
 }
 
+
+
 .wrapper {
+    display : flex;
     padding: 25px 0;
+    padding-right: 20px;
+    justify-content: space-between;
+    margin-left: 20px ;
 }
 
 body > header {
@@ -199,10 +205,22 @@ input.submit {
     margin-left: 15px ; 
 }
 
-.wrapper{
+#tout{
     display : flex ; 
     justify-content: space-between;
-    margin-left: 5px ;
+    margin-left: 15px ; 
+
+
+}
+
+#tout{
+    display : flex ; 
+    margin-left: 15px ; 
+    justify-content : space-between ;
+    padding-top: 40px;
+
+    justify-content: flex-start;
+    align-self: flex-start;
 }
 
 #albums article img {
@@ -250,6 +268,23 @@ nav.browse a, nav.music a {
     padding-top: 2px;
 }
 
+header form {
+    width: 500px;
+}
+
+#luuke{
+    display: flex;
+    align-self: flex-end;
+    padding-right: 40px;
+}
+
+#Yourmusic{
+    align-self: flex-start;
+}
+#Browse{
+    align-self: flex-start;
+}
+
 @media screen and (max-width :600px) {
     #facebook{
         display: none ; 
@@ -258,6 +293,12 @@ nav.browse a, nav.music a {
         display : none ; 
     }
     .wrapper form{
+        display : none ; 
+    }
+    header form{
+        display : none ; 
+    }
+    body aside{
         display : none ; 
     }
 }
